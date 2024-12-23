@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KoscheiTheDeathless {
 
+
     private Ocean1 ocean;
 
     public String getRulesByDeth() {
@@ -14,7 +15,7 @@ public class KoscheiTheDeathless {
     }
 
     @Autowired
-    public void setOcean(Ocean1 ocean) {
+    public void setOcean(@Autowired Ocean1 ocean) {
         this.ocean = ocean;
     }
 }
